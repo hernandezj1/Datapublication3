@@ -15,7 +15,16 @@ function popup(){
     alert("Welcome to the website!!!!!!!");
 }
 
-
+function parseArray(){ 
+    var array = [], inputCat=['First Number','Second Number','Third Number','Fourth Number']; 
+    inputCat.forEach((item) => {
+        var input = prompt(`enter one ${item}`);
+        array.push(input);
+      });
+    array.sort
+    document.getElementById('array').innerText = `You entered ${array.join(', ')}.
+    I sorted them ${array.sort((a, b) => a - b).join(', ')}`;
+}
 
 
 function wikiAPI(){
